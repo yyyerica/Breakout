@@ -87,14 +87,14 @@
     <ClInclude Include="Texture.h" />
   </ItemGroup>
   <ItemGroup>
-    <Image Include="C:\Users\YYY\Desktop\awesomeface.png" />
-  </ItemGroup>
-  <ItemGroup>
     <ResourceCompile Include="app1.rc" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="C:\Users\YYY\Desktop\sprite.frag" />
-    <None Include="C:\Users\YYY\Desktop\sprite.vs" />
+    <None Include="..\..\getting-started1\getting-started1\triangle.frag" />
+    <None Include="..\..\getting-started1\getting-started1\triangle.vertex" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="C:\Users\YYY\Desktop\awesomeface.png" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

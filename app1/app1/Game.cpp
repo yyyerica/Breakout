@@ -30,7 +30,8 @@ Game::~Game()
 void Game::Init() //初始化函数
 {
 	// Load shaders
-	ResourceManager::LoadShader("shaders/sprite.vs", "shaders/sprite.frag", nullptr, "sprite");
+	//ResourceManager::LoadShader("shaders/sprite.vs", "shaders/sprite.frag", nullptr, "sprite");
+	ResourceManager::LoadShader("triangle.vertex", "triangle.frag", nullptr, "sprite");
 	
 	// Configure shaders
 	//定义如下的矩阵来把世界坐标指定为屏幕坐标：
@@ -39,7 +40,9 @@ void Game::Init() //初始化函数
 	ResourceManager::GetShader("sprite").Use().SetInteger("image", 0);
 	ResourceManager::GetShader("sprite").SetMatrix4("projection", projection);
 	// Load textures
-	ResourceManager::LoadTexture("textures/awesomeface.png", GL_TRUE, "face");
+	//ResourceManager::LoadTexture("textures/awesomeface.png", GL_TRUE, "face");
+	ResourceManager::LoadTexture("awesomeface.png", GL_TRUE, "face");
+	
 	// Set render-specific controls
 	Renderer = new SpriteRenderer(ResourceManager::GetShader("sprite"));
 }
