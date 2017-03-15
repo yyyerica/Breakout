@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{D5AAAD5A-5760-4A90-A3C0-C5C4227C1499}</ProjectGuid>
+    <RootNamespace>end</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>F:\glfw-3.2.1\include;F:\CMake\include;$(IncludePath)</IncludePath>
+    <LibraryPath>F:\glew-2.0.0\lib;F:\CMake\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>F:\CMake\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>opengl32.lib;glfw3.lib;glew32s.lib;SOIL.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <IgnoreSpecificDefaultLibraries>LIBCMT.lib</IgnoreSpecificDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\Users\YYY\Desktop\Breakout\app1\app1\ball_object.cpp" />
+    <ClCompile Include="C:\Users\YYY\Desktop\Breakout\app1\app1\Game.cpp" />
+    <ClCompile Include="C:\Users\YYY\Desktop\Breakout\app1\app1\game_level.cpp" />
+    <ClCompile Include="C:\Users\YYY\Desktop\Breakout\app1\app1\game_object.cpp" />
+    <ClCompile Include="C:\Users\YYY\Desktop\Breakout\app1\app1\particle_generator.cpp" />
+    <ClCompile Include="C:\Users\YYY\Desktop\Breakout\app1\app1\post_processor.cpp" />
+    <ClCompile Include="C:\Users\YYY\Desktop\Breakout\app1\app1\ResourceManager.cpp" />
+    <ClCompile Include="C:\Users\YYY\Desktop\Breakout\app1\app1\Shader.cpp" />
+    <ClCompile Include="C:\Users\YYY\Desktop\Breakout\app1\app1\Source.cpp" />
+    <ClCompile Include="C:\Users\YYY\Desktop\Breakout\app1\app1\SpriteRenderer.cpp" />
+    <ClCompile Include="C:\Users\YYY\Desktop\Breakout\app1\app1\Texture.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\YYY\Desktop\Breakout\app1\app1\ball_object.h" />
+    <ClInclude Include="C:\Users\YYY\Desktop\Breakout\app1\app1\game.h" />
+    <ClInclude Include="C:\Users\YYY\Desktop\Breakout\app1\app1\game_level.h" />
+    <ClInclude Include="C:\Users\YYY\Desktop\Breakout\app1\app1\game_object.h" />
+    <ClInclude Include="C:\Users\YYY\Desktop\Breakout\app1\app1\particle_generator.h" />
+    <ClInclude Include="C:\Users\YYY\Desktop\Breakout\app1\app1\post_processor.h" />
+    <ClInclude Include="C:\Users\YYY\Desktop\Breakout\app1\app1\power_up.h" />
+    <ClInclude Include="C:\Users\YYY\Desktop\Breakout\app1\app1\resource.h" />
+    <ClInclude Include="C:\Users\YYY\Desktop\Breakout\app1\app1\resource_manager.h" />
+    <ClInclude Include="C:\Users\YYY\Desktop\Breakout\app1\app1\Shader.h" />
+    <ClInclude Include="C:\Users\YYY\Desktop\Breakout\app1\app1\sprite_renderer.h" />
+    <ClInclude Include="C:\Users\YYY\Desktop\Breakout\app1\app1\Texture.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\YYY\Desktop\Breakout\app1\app1\html1.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="C:\Users\YYY\Desktop\Breakout\app1\app1\triangle.frag" />
+    <None Include="C:\Users\YYY\Desktop\Breakout\app1\app1\triangle.vertex" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="awesomeface.png" />
+    <Image Include="paddle.png" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
