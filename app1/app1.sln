@@ -5,8 +5,6 @@ VisualStudioVersion = 12.0.40629.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "app1", "app1\app1.vcxproj", "{639DBB0B-1D57-49A9-AE21-30244E039C92}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "opengl3.3p1", "..\opengl3.3p1\opengl3.3p1\opengl3.3p1.vcxproj", "{8DAB0D49-D970-4F68-8B84-5388BFBFB5C1}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -17,10 +15,6 @@ Global
 		{639DBB0B-1D57-49A9-AE21-30244E039C92}.Debug|Win32.Build.0 = Debug|Win32
 		{639DBB0B-1D57-49A9-AE21-30244E039C92}.Release|Win32.ActiveCfg = Release|Win32
 		{639DBB0B-1D57-49A9-AE21-30244E039C92}.Release|Win32.Build.0 = Release|Win32
-		{8DAB0D49-D970-4F68-8B84-5388BFBFB5C1}.Debug|Win32.ActiveCfg = Debug|Win32
-		{8DAB0D49-D970-4F68-8B84-5388BFBFB5C1}.Debug|Win32.Build.0 = Debug|Win32
-		{8DAB0D49-D970-4F68-8B84-5388BFBFB5C1}.Release|Win32.ActiveCfg = Release|Win32
-		{8DAB0D49-D970-4F68-8B84-5388BFBFB5C1}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
